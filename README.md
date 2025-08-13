@@ -2,11 +2,15 @@
 - [Introduction](#introduction)
 - [Tools Used Here](#tools-used-here)
 - [L1 Principal Component Analysis](#l1-principal-component-analysis)
-- [L2 Canonical Correlation Analysis](#l2-canonical-correlation-analysis)
-- [L4 Factorial Analysis](#l4-factorial-analysis)
+- [L2 Canonical Correlation Analysis (CCA)](#l2-canonical-correlation-analysis-cca)
+- [L3 Covariance Matrix](#l3-covariance-matrix)
+- [L4 Factor Analysis](#l4-factor-analysis)
+- [L5 Clustering with Iris Data](#l5-clustering-with-iris-data)
+- [L7 DBSCAN Clustering](#l7-dbscan-clustering)
+- [L8 Multidimensional Scaling (MDS)](#l8-multidimensional-scaling-mds)
+- [L9 Correspondence Analysis (CA)](#l9-correspondence-analysis-ca)
 
 ---
-
 - ## Introduction
 This repository showcases my academic projects focused on statistical analysis and data science. It includes in-depth implementations of techniques such as **Factor Analysis, Principal Component Analysis (PCA), Clustering algorithms (including DBSCAN), Multidimensional Scaling (MDS)** and other advanced analytical methods. All projects are developed and demonstrated using **Jupyter Notebook (Python)** with an emphasis on both theoretical understanding and practical application through real-world or sample academic datasets.
 
@@ -33,7 +37,7 @@ Principal Component Analysis (PCA) is a statistical technique used for dimension
 5. Select top k eigenvectors to form new feature space (k < original number of features).
 6. Transform original data into this reduced feature space.
 
-- ## L2 Canonical Correlation Analysis
+- ## L2 Canonical Correlation Analysis (CCA)
 # Canonical Correlation Analysis (CCA) – Psychological & Academic Variables
 
 This project applies **Canonical Correlation Analysis (CCA)** to explore the relationships between two sets of variables — **psychological factors** and **academic performance indicators** — for the same group of subjects.
@@ -80,7 +84,20 @@ Higher **locus of control** and **motivation** are moderately associated with be
 
 
 
-- ## L4 Factorial Analysis
+
+
+## L3 Covariance Matrix
+
+
+
+
+
+
+
+
+
+
+- ## L4 Factor Analysis
 # Factor Analysis of Wine Quality Dataset
 
 This project applies **Factor Analysis** to the **Wine Dataset** (from the UCI Machine Learning Repository) to identify latent factors that explain the relationships among various chemical properties of wine. The goal is to reduce dimensionality and interpret the underlying components influencing wine quality.
@@ -126,3 +143,11 @@ The analysis reduces the original 13 chemical measurements into **three interpre
 - **Alcohol & Color Intensity**
 - **Acidity & Mineral Content**
 
+## L5 Clustering with Iris Data
+
+## L7 DBSCAN Clustering
+
+
+## L8 Multidimensional Scaling (MDS)
+
+## L9 Correspondence Analysis (CA)
