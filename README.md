@@ -3,7 +3,7 @@
 - [Tools Used Here](#tools-used-here)
 - [L1 Principal Component Analysis](#l1-principal-component-analysis)
 - [L2 Canonical Correlation Analysis](#l2-canonical-correlation-analysis)
-- [L3 Factorial Analysis](#l3-factorial-analysis)
+- [L4 Factorial Analysis](#l4-factorial-analysis)
 
 ---
 
@@ -32,19 +32,6 @@ Principal Component Analysis (PCA) is a statistical technique used for dimension
 4. Sort eigenvalues in descending order — higher eigenvalue → more variance explained.
 5. Select top k eigenvectors to form new feature space (k < original number of features).
 6. Transform original data into this reduced feature space.
-
-## From this Analysis
-
-
-<img width="780" height="667" alt="image" src="https://github.com/user-attachments/assets/9d10885f-888e-4699-b788-b468d483d865" />
-
-
-
-
-
-
-
-
 
 - ## L2 Canonical Correlation Analysis
 # Canonical Correlation Analysis (CCA) – Psychological & Academic Variables
@@ -93,5 +80,49 @@ Higher **locus of control** and **motivation** are moderately associated with be
 
 
 
-- ## L3 Factorial Analysis
-(Your factorial analysis content here)
+- ## L4 Factorial Analysis
+# Factor Analysis of Wine Quality Dataset
+
+This project applies **Factor Analysis** to the **Wine Dataset** (from the UCI Machine Learning Repository) to identify latent factors that explain the relationships among various chemical properties of wine. The goal is to reduce dimensionality and interpret the underlying components influencing wine quality.
+
+## Dataset Overview
+- **Source:** UCI Wine Dataset (`load_wine` from `sklearn.datasets`)
+- **Observations:** 178
+- **Features:** 13 chemical measurements (e.g., alcohol, flavanoids, color intensity, proline, etc.)
+- **Missing Values:** None
+
+## Pre-analysis Testing
+- **Bartlett’s Test of Sphericity**  
+  - χ² = 1317.181, p-value = 0.000 → Data is suitable for factor analysis.
+- **Kaiser-Meyer-Olkin (KMO) Test**  
+  - KMO = 0.779 → Sampling adequacy is acceptable.
+
+## Factor Analysis
+- **Method:** `FactorAnalyzer` with **Varimax rotation**
+- **Number of Factors:** 3 (chosen based on eigenvalues > 1 and scree plot)
+
+### Factor Loadings Interpretation
+1. **Factor 1 – Phenolic Compounds Factor**
+   - **High loadings:** Flavanoids (0.921), OD280/OD315 (0.862), Total Phenols (0.798), Proanthocyanins (0.592), Hue (0.678)
+   - Represents polyphenol and flavonoid content, influencing taste, bitterness, and aging potential.
+
+2. **Factor 2 – Alcohol & Color Intensity Factor**
+   - **High loadings:** Alcohol (0.798), Proline (0.728), Color Intensity (0.712)
+   - Captures attributes related to alcohol strength, color richness, and associated compounds.
+
+3. **Factor 3 – Acidity & Minerals Factor**
+   - **High loadings:** Alcalinity of Ash (0.752), Ash (0.727), moderate Malic Acid (0.228)
+   - Reflects acidity and mineral content, influencing freshness and tartness.
+
+## Variance Explained
+- **Factor 1:** 30.75%
+- **Factor 2:** 17.84%
+- **Factor 3:** 9.77%
+- **Cumulative Variance:** 58.37%
+
+## Conclusion
+The analysis reduces the original 13 chemical measurements into **three interpretable latent factors**, providing meaningful insights into the main chemical dimensions affecting wine characteristics:
+- **Phenolic Profile**
+- **Alcohol & Color Intensity**
+- **Acidity & Mineral Content**
+
