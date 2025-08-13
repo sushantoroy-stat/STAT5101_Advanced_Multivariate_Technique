@@ -2,7 +2,7 @@
 - [Introduction](#introduction)
 - [Tools Used Here](#tools-used-here)
 - [L1 Principal Component Analysis](#l1-principal-component-analysis)
-- [L2 Covariance Matrix](#l2-covariance-matrix)
+- [L2 Canonical Correlation Analysis](#l2-canonical-correlation-analysis)
 - [L3 Factorial Analysis](#l3-factorial-analysis)
 
 ---
@@ -46,8 +46,52 @@ Principal Component Analysis (PCA) is a statistical technique used for dimension
 
 
 
-- ## L2 Covariance Matrix
-(Your covariance matrix content here)
+- ## L2 Canonical Correlation Analysis
+# Canonical Correlation Analysis (CCA) – Psychological & Academic Variables
+
+This project applies **Canonical Correlation Analysis (CCA)** to explore the relationships between two sets of variables — **psychological factors** and **academic performance indicators** — for the same group of subjects.
+
+## Dataset Overview
+- **Source file:** `mmreg.dta`  
+- **Observations:** 600  
+- **Variables:**
+  - *Psychological*: `locus_of_control`, `self_concept`, `motivation`  
+  - *Academic*: `read`, `write`, `math`, `science`  
+  - Additional: `id`, `female`  
+
+The dataset had **no missing values**. Descriptive statistics were calculated to understand the variable distributions.
+
+## Data Preprocessing
+1. **Outlier Detection**  
+   - Method: **Interquartile Range (IQR)**  
+   - Outliers found in `locus_of_control` and `self_concept`.
+2. **Outlier Removal**  
+   - Removed **14 records**, resulting in **586 cleaned observations**.
+3. **Exploratory Analysis**  
+   - Used **boxplots** and **correlation heatmaps** to visualize distributions and relationships.
+
+## Canonical Correlation Analysis
+- **Groups Defined:**
+  - **Psychological Variables (X):** `locus_of_control`, `self_concept`, `motivation`
+  - **Academic Variables (Y):** `read`, `write`, `math`, `science`
+- **Method:** `sklearn.cross_decomposition.CCA` with 1 component.
+- **Results:**
+  - **Canonical Correlation:** `0.4588` → *moderate positive relationship*
+  - **Variable Loadings:**
+    - **Psychological:**
+      - Locus of control: **0.8775** (strongest positive)
+      - Motivation: **0.4378** (moderate positive)
+      - Self-concept: **–0.1957** (slight negative)
+    - **Academic:**
+      - Writing: **0.7631** (strongest positive)
+      - Reading: **0.5929** (positive)
+      - Math: **0.2486** (weak positive)
+      - Science: **–0.0656** (negligible negative)
+
+## Interpretation
+Higher **locus of control** and **motivation** are moderately associated with better performance in **writing** and **reading**, while **self-concept** and **science scores** have minimal influence in the canonical relationship.
+
+
 
 - ## L3 Factorial Analysis
 (Your factorial analysis content here)
