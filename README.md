@@ -26,6 +26,9 @@ This repository showcases my academic projects focused on statistical analysis a
 - `matplotlib` – Data visualization.
 - `seaborn` – Statistical data visualization with enhanced aesthetics.
 
+
+
+# 📊 Lecture 1: Project Interpretation – Principal Component Analysis (PCA)
 - ## L1 Principal Component Analysis
 Principal Component Analysis (PCA) is a statistical technique used for dimensionality reduction — that means it reduces the number of variables (features) in a dataset while keeping as much important information (variance) as possible.
 
@@ -37,7 +40,6 @@ Principal Component Analysis (PCA) is a statistical technique used for dimension
 5. Select top k eigenvectors to form new feature space (k < original number of features).
 6. Transform original data into this reduced feature space.
 ---
-# 📊 Project Interpretation – Principal Component Analysis (PCA)
 
 This project demonstrates the application of **Principal Component Analysis (PCA)** for dimensionality reduction and classification using a small dataset containing **Height, Weight, Age, and Gender**.  
 
@@ -76,9 +78,9 @@ This project demonstrates the application of **Principal Component Analysis (PCA
 
 ---
 
-
+# 📊 Lecture 2:  Canonical Correlation Analysis (CCA) – Psychological & Academic Variables
 - ## L2 Canonical Correlation Analysis (CCA)
-# Canonical Correlation Analysis (CCA) – Psychological & Academic Variables
+
 
 This project applies **Canonical Correlation Analysis (CCA)** to explore the relationships between two sets of variables — **psychological factors** and **academic performance indicators** — for the same group of subjects.
 
@@ -125,7 +127,7 @@ Higher **locus of control** and **motivation** are moderately associated with be
 
 
 
-# 📊 Project Interpretation – Covariance Matrix of the Iris Dataset  
+# 📊 Lecture 3: Project Interpretation – Covariance Matrix of the Iris Dataset  
 ## L3 Covariance Matrix
 
 This project demonstrates how to compute and visualize the **covariance matrix** for the numeric features of the **Iris dataset**, providing insights into the relationships between measurements of sepal and petal dimensions.  
@@ -171,9 +173,9 @@ This project demonstrates how to compute and visualize the **covariance matrix**
 ---
 
 
-
+# 📊 Lecture 4: Factor Analysis of Wine Quality Dataset
 - ## L4 Factor Analysis
-# Factor Analysis of Wine Quality Dataset
+
 
 This project applies **Factor Analysis** to the **Wine Dataset** (from the UCI Machine Learning Repository) to identify latent factors that explain the relationships among various chemical properties of wine. The goal is to reduce dimensionality and interpret the underlying components influencing wine quality.
 
@@ -218,7 +220,7 @@ The analysis reduces the original 13 chemical measurements into **three interpre
 - **Alcohol & Color Intensity**
 - **Acidity & Mineral Content**
 
-# 📊 Project Interpretation – K-Means Clustering on the Iris Dataset  
+# 📊 Lecture 5: Project Interpretation – K-Means Clustering on the Iris Dataset  
 ## L5 Clustering with Iris Data
 
 This project applies **K-Means clustering** to the Iris dataset, explores the optimal number of clusters using the **Elbow Method**, and evaluates the results against the known species labels. **Hierarchical clustering** is also performed for comparison.  
@@ -277,9 +279,9 @@ This project applies **K-Means clustering** to the Iris dataset, explores the op
 - **K-Means** and **Agglomerative** performed similarly, with K-Means showing marginally better results.  
 
 ---
-
+# 📊 Lecture 7: DBSCAN Clustering – Two Moons Dataset
 ## L7 DBSCAN Clustering
-## 📌 DBSCAN Clustering – Two Moons Dataset
+
 
 This project demonstrates the **DBSCAN** (Density-Based Spatial Clustering of Applications with Noise) algorithm on a synthetic **two-moon** dataset.  
 DBSCAN groups together points that are closely packed and marks points in low-density regions as **noise**.
@@ -308,10 +310,10 @@ DBSCAN groups together points that are closely packed and marks points in low-de
 ✅ **Conclusion:** DBSCAN is well-suited for datasets with non-linear cluster boundaries and noise. In this example, it perfectly mapped the two moon-shaped patterns while filtering out outliers.
 
 
-
+# 📊 Lecture 8: Multidimensional Scaling (MDS) – US City Distances
 ## L8 Multidimensional Scaling (MDS)
 
-## 📊 Multidimensional Scaling (MDS) – US City Distances
+
 
 This project uses **Multidimensional Scaling (MDS)** to visualize pairwise distances between 10 major US cities in a 2-dimensional space.  
 MDS takes the real-world distance matrix and places cities as points so that the distances on the plot approximate the original geographic distances.
@@ -337,10 +339,10 @@ MDS takes the real-world distance matrix and places cities as points so that the
 
 ✅ This visualization confirms that **MDS effectively preserves relative distances** and reveals natural groupings based on geography, even without using latitude and longitude directly.
 
-
+# 📊 Lecture 9: Correspondence Analysis (CA) – US Crime Data
 ## L9 Correspondence Analysis (CA)
 
-## 📊 Correspondence Analysis (CA) – US Crime Data
+
 
 This project applies **Correspondence Analysis (CA)** to explore the relationships between U.S. states and four crime statistics: **Murder**, **Assault**, **UrbanPop** (percentage of urban population), and **Rape**.  
 CA reduces the dimensionality of the contingency table, projecting both **rows** (states) and **columns** (crime variables) into the same 2D space for easier interpretation.
