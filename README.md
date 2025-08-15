@@ -76,6 +76,8 @@ This project demonstrates the application of **Principal Component Analysis (PCA
 - Standardization was crucial to avoid bias toward large-scale variables.  
 - Logistic Regression performed flawlessly on the reduced dataset, but validation on larger data is recommended.  
 
+Code: https://github.com/sushantoroy-stat/id_22310002__advanced_multivariate_technique_assignment/blob/main/1%20Principle%20Component%20Analysis/L1_PCA.ipynb
+
 ---
 
 # 📊 Lecture 2:  Canonical Correlation Analysis (CCA) – Psychological & Academic Variables
@@ -124,8 +126,10 @@ The dataset had **no missing values**. Descriptive statistics were calculated to
 ## Interpretation
 Higher **locus of control** and **motivation** are moderately associated with better performance in **writing** and **reading**, while **self-concept** and **science scores** have minimal influence in the canonical relationship.
 
+Code: https://github.com/sushantoroy-stat/id_22310002__advanced_multivariate_technique_assignment/blob/main/2%20Canonical%20Correlation%20Analysis%20(CCA)/L2_Canonical_correlation.ipynb
 
 
+---
 
 # 📊 Lecture 3: Project Interpretation – Covariance Matrix of the Iris Dataset  
 ## L3 Covariance Matrix
@@ -169,6 +173,8 @@ This project demonstrates how to compute and visualize the **covariance matrix**
 - Petal measurements are **strongly correlated** and vary more than sepal measurements.  
 - Sepal width has an **inverse relationship** with petal size, useful in classification.  
 - Covariance matrix is a foundation for methods like **PCA**, where understanding variance and relationships between features is essential.  
+
+Code: https://github.com/sushantoroy-stat/id_22310002__advanced_multivariate_technique_assignment/blob/main/3%20Covariance%20Matrix/Covariance_Iris_data.ipynb
 
 ---
 
@@ -219,6 +225,11 @@ The analysis reduces the original 13 chemical measurements into **three interpre
 - **Phenolic Profile**
 - **Alcohol & Color Intensity**
 - **Acidity & Mineral Content**
+
+
+Code: https://github.com/sushantoroy-stat/id_22310002__advanced_multivariate_technique_assignment/blob/main/4%20Factor%20Analysis/wine_quality_factor_analysis.ipynb
+
+---
 
 # 📊 Lecture 5: Project Interpretation – K-Means Clustering on the Iris Dataset  
 ## L5 Clustering with Iris Data
@@ -278,6 +289,8 @@ This project applies **K-Means clustering** to the Iris dataset, explores the op
 - *Versicolor* and *Virginica* are similar, leading to some misclassification.  
 - **K-Means** and **Agglomerative** performed similarly, with K-Means showing marginally better results.  
 
+Code: https://github.com/sushantoroy-stat/id_22310002__advanced_multivariate_technique_assignment/blob/main/5%20Clustering%20with%20Iris%20data/K-Means_clustering.ipynb
+
 ---
 # 📊 Lecture 7: DBSCAN Clustering – Two Moons Dataset
 ## L7 DBSCAN Clustering
@@ -309,6 +322,9 @@ DBSCAN groups together points that are closely packed and marks points in low-de
 
 ✅ **Conclusion:** DBSCAN is well-suited for datasets with non-linear cluster boundaries and noise. In this example, it perfectly mapped the two moon-shaped patterns while filtering out outliers.
 
+Code: https://github.com/sushantoroy-stat/id_22310002__advanced_multivariate_technique_assignment/blob/main/7%20DBSCAN%20Clustering/DBSCAN.ipynb
+
+---
 
 # 📊 Lecture 8: Multidimensional Scaling (MDS) – US City Distances
 ## L8 Multidimensional Scaling (MDS)
@@ -335,9 +351,12 @@ MDS takes the real-world distance matrix and places cities as points so that the
   - **Dimension 1** loosely separates East (positive values) from West (negative values).  
   - **Dimension 2** roughly captures a North–South relationship, though MDS dimensions are abstract and optimized for distance preservation rather than exact geographic coordinates.  
 
----
 
 ✅ This visualization confirms that **MDS effectively preserves relative distances** and reveals natural groupings based on geography, even without using latitude and longitude directly.
+
+Code: https://github.com/sushantoroy-stat/id_22310002__advanced_multivariate_technique_assignment/blob/main/8%20Multidimensional%20Scalin%20(MDS)/MDS_with_USA_Cities.ipynb
+
+---
 
 # 📊 Lecture 9: Correspondence Analysis (CA) – US Crime Data
 ## L9 Correspondence Analysis (CA)
@@ -376,6 +395,6 @@ CA reduces the dimensionality of the contingency table, projecting both **rows**
   - **Top-left** → Higher murder rates.  
   - **Bottom-left** → Higher assault rates.
 
----
-
 ✅ **Conclusion:** CA provides a clear visual separation of states based on their crime profiles, making it easy to identify which states are most strongly associated with specific crime variables.
+
+Code: https://github.com/sushantoroy-stat/id_22310002__advanced_multivariate_technique_assignment/blob/main/9%20Correspondene%20Analysis%20(CA)/Correspondence_Analysis.ipynb
